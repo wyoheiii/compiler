@@ -9,3 +9,6 @@ down:
 PHONY += re
 re: down all
 
+PHONY += clean
+clean:
+	rm -rf ./debug
