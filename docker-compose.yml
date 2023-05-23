@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  rust:
+    platform: linux/amd64
+    image: rust:latest
+    volumes:
+      - .:/projects
+    working_dir: /projects
+    environment:
+      - USER=user
+    tty: true
