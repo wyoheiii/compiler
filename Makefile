@@ -11,4 +11,8 @@ re: down all
 
 PHONY += clean
 clean:
-	rm -rf ./debug
+	rm -rf ./debug a.out tmp.s
+
+PHONY += test
+test:
+	./test.sh
