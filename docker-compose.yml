@@ -7,6 +7,4 @@ services:
     volumes:
       - .:/projects
     working_dir: /projects
-    environment:
-      - USER=user
-    tty: true
+    command: bash -c "chmod +x test.sh && bash"
